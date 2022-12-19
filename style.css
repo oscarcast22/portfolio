@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+::-moz-selection {
+  background-color: hsl(171deg, 100%, 41%);
+}
+::selection {
+  background-color: hsl(171deg, 100%, 41%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.standard-radius {
+  border-radius: 10px;
+}
+
+.late-gray-bg {
+  background-color: hsl(215deg, 15%, 16%);
+}
+
+.font-light {
+  color: hsl(0deg, 0%, 99%);
+}
+
+.title {
+  opacity: 0.8;
+}
+
+.subtitle {
+  opacity: 0.3;
+}
+
+.level-item {
+  padding: 1em 0;
+}
+
+.title-underline {
+  border-bottom: 10px solid hsl(171deg, 100%, 41%);
+}
+
+.w-full {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  #navbarMenuHeroB {
+    display: none;
+  }
+}
+.navbar-burger span {
+  width: 30px;
+}
+
+.navbar-menu {
+  background-color: hsl(215deg, 15%, 16%);
+}
+
+.mobile-menu {
+  color: hsl(0deg, 0%, 99%);
+  -webkit-animation: menuAnimation 300ms ease;
+          animation: menuAnimation 300ms ease;
+}
+
+.hero-body {
+  position: relative;
+}
+
+.main-hero {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-image: url("Cover1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.is-large {
+  padding: 10rem 0;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  transition: all ease 300ms;
+}
+figure span {
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(0deg, 0%, 99%);
+  display: none;
+  text-align: center;
+  transition: all ease 300ms;
+}
+
+figure,
+img {
+  overflow: hidden;
+  cursor: pointer;
+  transition: all ease 300ms;
+}
+
+figure:hover img {
+  transform: scale(1.03);
+  filter: brightness(50%);
+}
+figure:hover span {
+  display: block;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@-webkit-keyframes menuAnimation {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes menuAnimation {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
